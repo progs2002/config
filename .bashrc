@@ -139,3 +139,5 @@ ex ()
 alias ls='ls --color'
 alias lsl='ls -al'
 export EDITOR='vim'
+alias pdf='evince-previewer'
+alias nb='jupyter-notebook'
