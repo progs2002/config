@@ -140,6 +140,8 @@ ex ()
   fi
 }
 
+export FZF_DEFAULT_COMMAND='find . \! \( -type d -path ./.git -prune \) \! -type d \! -name '\''*.tags'\'' -printf '\''%P\n'\'
+
 alias ls='ls --color'
 alias lsl='ls -al'
 export EDITOR='vim'
@@ -150,3 +152,4 @@ alias fe='nautilus'
 alias update='sudo pacman -Syu && yay'
 alias duh='du -sh .[!.]* * | sort -rh'
 alias du='du -sh * | sort -rh'
+alias f='fzf'
